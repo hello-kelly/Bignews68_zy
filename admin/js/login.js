@@ -8,11 +8,11 @@ $(function() {
             url: 'http://localhost:8080/api/v1/admin/user/login',
             data: $(this).serialize(),
             success: function(info) {
+                //不管登录是否成功，都弹出一个模态框
                 $('#myModal').modal('show');
                 $('.modal-body>p').text(info.msg);
                 if (+info.code === 200) {
-                    //不管登录是否成功，都弹出一个模态框
-
+                    localStorage.setItem('token', info.token);
                     // 模态框隐藏后触发的事件hidden.bs.modal
                     $('#myModal').on('hidden.bs.modal',
                         function() {
