@@ -5,7 +5,7 @@ $(function() {
         e.preventDefault();
         $.ajax({
             type: 'post',
-            url: 'http://localhost:8080/api/v1/admin/user/login',
+            url: BigNew.user_login,
             data: $(this).serialize(),
             success: function(info) {
                 //不管登录是否成功，都弹出一个模态框
