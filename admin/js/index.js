@@ -13,15 +13,15 @@ $(function() {
                 $('.sider .user_info img').attr('src', res.data.userPic);
                 $('.sider .user_info span').html(`欢迎&nbsp;&nbsp;${res.data.nickname}`);
                 $('.header_bar  img').attr('src', res.data.userPic);
-                $('.logout').on('click', function() {
-                    // 2.2 删除本地存储中的token值 
-                    localStorage.removeItem('token')
-                        // 2.3 跳转到登陆页面
-                    location.href = './login.html'
-                })
             }
 
         }
+    });
+    $('.logout').on('click', function() {
+        // 2.2 删除本地存储中的token值 
+        localStorage.removeItem('token')
+            // 2.3 跳转到登陆页面
+        location.href = './login.html'
     });
     // 3.给左侧按钮添加点击高亮功能
     $('.menu .level01').on('click', function() {

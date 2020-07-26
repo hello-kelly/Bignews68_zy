@@ -10,7 +10,7 @@ $(function() {
             success: function(info) {
                 //不管登录是否成功，都弹出一个模态框
                 $('#myModal').modal('show');
-                $('.modal-body>p').text(info.msg);
+                $('#myModal .modal-body>p').text(info.msg);
                 if (+info.code === 200) {
                     localStorage.setItem('token', info.token);
                     // 模态框隐藏后触发的事件hidden.bs.modal

@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/iconfont.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="./libs/jquery-1.12.4.min.js"></script>
+    <script src="./js/http.js"></script>
+    <script src="./js/user.js"></script>
 
 </head>
 
@@ -20,7 +22,7 @@
             用户信息修改
         </div>
         <div class="container-fluid common_con">
-            <form class="form-horizontal article_form" id="form">
+            <form class="form-horizontal article_form userinfo" id="changeform">
                 <div class="form-group">
                     <label for="inputEmail1" class="col-sm-2 control-label">用户名称：</label>
                     <div class="col-sm-4">
@@ -56,8 +58,7 @@
                 <div class="form-group">
                     <label for="inputEmail4" class="col-sm-2 control-label">密码：</label>
                     <div class="col-sm-4">
-                        <input type="password" name="password" class="form-control password" id="inputEmail4"
-                            value="12345678">
+                        <input type="password" name="password" class="form-control password" id="inputEmail4" value="12345678">
                     </div>
                 </div>
                 <div class="form-group">
