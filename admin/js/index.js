@@ -32,7 +32,11 @@ $(function() {
             $('.icon-arrowdownl').toggleClass('rotate0');
             //jQuery对象的click()事件,他只会触发js单击事件,而不会触发a标签的默认跳转事件.
             //dom对象的click()事件,他不仅会触发js单击事件,还会触发a标签的默认跳转事件
+            // console.log($('.level02>li>a'));//找的是3个a
             $('.level02 li:eq(0)>a')[0].click();
+        } else {
+            $('.level02').slideUp();
+            $('.level02 li').removeClass('active');
         }
     });
     // 二级菜单高亮并让第一个默认高亮,在下拉显示的时候就触发
