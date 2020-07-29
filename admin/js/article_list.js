@@ -176,5 +176,6 @@ $(function() {
     // 4.编辑按钮
     $('tbody').on('click', '.edit', function() {
         parent.$('.menu .level02 li:eq(1)').click();
+
     })
 })

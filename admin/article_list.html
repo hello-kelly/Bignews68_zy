@@ -123,8 +123,8 @@
             <td class="text-center">{{v.date}}</td>
             <td class="text-center">{{v.state}}</td>
             <td class="text-center">
-                <a href="article_release.html" class="btn btn-default btn-xs edit" id="{{v.id}}">编辑</a>
-                <button class="btn btn-danger btn-xs delete" data-toggle="modal" data-target="#delmodal" id="{{v.id}}">删除</button>
+                <a href="article_edit.html?id={{v.id}}" class="btn btn-default btn-xs edit">编辑</a>
+                <button class="btn btn-danger btn-xs delete " data-toggle="modal " data-target="#delmodal " id="{{v.id}} ">删除</button>
             </td>
         </tr>
         {{/each}}
